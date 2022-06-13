@@ -1,0 +1,118 @@
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    @include sm {
+        max-width: 720px;
+    }
+    @include md {
+        max-width: 850px;
+    }
+    @include l {
+        max-width: 1050px;
+    }
+    @include xl {
+        max-width: 1150px;
+    }
+}
+
+/* === FLEX === */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* === SPACES === */
+.around {
+    justify-content: space-around;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.evenly {
+    justify-content: space-evenly;
+}
+
+.al-center {
+    align-items: center;
+}
+
+/* === BUTTONS === */
+.btn {
+    color: #FFF;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.7rem;
+    &_container {
+        height: 50px;
+        border-radius: 30px;
+        text-align: center;
+        padding-top: 1.2rem;
+        @include sm {
+            padding-top: 1.3rem;
+        }
+        @include md {
+            width: 250px;
+            padding-top: 1.5rem;
+        }
+        @include l {
+            width: 250px;
+            padding-top: 1.5rem;
+        }
+        @include xl {
+            width: 325px;
+        }
+    }
+    &-red {
+        background-image: var(--red-gradient);
+        box-shadow: var(--red-box-shadow-down);
+    }
+    @include xl {
+        font-size: 2rem;
+    }
+
+}
+
+.title {
+    &_container {
+        text-align: center;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+    &-big {
+        color: var(--dark-blue);
+        font-size: 5rem;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 9rem;
+        &::before {
+            content: "";
+            display: block;
+            height: 5px;
+            width: 40%;
+            background-image: var(--mcol-gradient);
+            border-radius: 5px;
+
+            position: absolute;
+            bottom: -1rem;
+            left: 0;
+        }
+        @include sm {
+            font-size: 3.5rem;
+            line-height: 4.5rem;
+        }
+    }
+}

@@ -1,0 +1,291 @@
+/* === HERO === */
+.hero {
+
+    background: var(--blue-gradient);
+    position: relative;
+    z-index: 0;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+
+    h1 {
+        color: #FFF;
+        font-size: 5rem;
+        text-transform: uppercase;
+        width: 70%;
+        margin-bottom: 7rem;
+
+        @include sm {
+            font-size: 3.5rem;
+            line-height: 4.5rem;
+        }
+
+        @include md-hp {
+            width: 100%;
+        }
+    }
+
+    .container-ctas {
+        column-gap: 4rem;
+        margin-bottom: 10rem;
+
+        @include sm {
+            flex-direction: column;
+            row-gap: 3.5rem;
+        }
+
+        @include md-hp {
+            justify-content: center;
+            margin-bottom: 7rem;
+        }
+    }
+
+    &-content {
+        padding-top: 12rem;
+        background: transparent url(../assets/images/mockup-phone-overlay.png) no-repeat;
+        background-position: center right;
+
+        @include sm {
+            padding-top: 5rem;
+        }
+
+        @include md-hp {
+            background-position: center calc(100% - 5rem);
+            background-size: 40%;
+        }
+    }
+}
+
+// .hero {
+
+//     background: var(--blue-gradient);
+//     position: relative;
+//     z-index: 0;
+//     padding-left: 1.6rem;
+//     padding-right: 1.6rem;
+
+//     h1 {
+//         color: #FFF;
+//         font-size: 5rem;
+//         text-transform: uppercase;
+//         width: 70%;
+//         margin-bottom: 7rem;
+//         @include sm {
+//             font-size: 3.5rem;
+//             line-height: 4.5rem;
+//         }
+//         @include md-hp {
+//             width: 100%;
+//         }
+//     }
+
+//     .container-ctas {
+//         column-gap: 4rem;
+//         margin-bottom: 10rem;
+//         @include sm {
+//             flex-direction: column;
+//             row-gap: 3.5rem;
+//         }
+//         @include md-hp {
+//             justify-content: center;
+//             margin-bottom: 7rem;
+//         }
+//     }
+
+//     &-content {
+//         padding-top: 12rem;
+//         background: transparent url(../assets/images/mockup-phone.png) no-repeat;
+//         background-position: center right;
+//         @include sm {
+//             padding-top: 5rem;
+//         }
+//         @include md-hp {
+//             background-image: none;
+//         }
+//     }
+// }
+
+// .btn {
+//     &_container {
+//         &-hero {
+//             background-image: var(--red-gradient);
+//             box-shadow: var(--red-box-shadow-down);
+//         }
+//     }
+// }
+
+/* === BADGES STORES === */
+.badge {
+    &_container {
+        padding-bottom: 12rem;
+        column-gap: 2.5rem;
+        row-gap: 2rem;
+
+        @include md-hp {
+            justify-content: center;
+            padding-bottom: 9rem;
+        }
+    }
+
+    &-store {
+        img {
+            width: 15rem;
+
+            @include md-hp {
+                width: 20rem;
+            }
+        }
+    }
+}
+
+/* === FEATURES === */
+.features {
+    padding: 8rem 0;
+
+    &_block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 5rem;
+        align-items: center;
+        justify-items: center;
+
+        @include md-hp {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &-article {
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 600px) {
+            width: 15rem;
+        }
+
+        img {
+            height: 90px;
+            width: auto;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+/* === GO SECTION === */
+.go {
+    background-color: var(--dark-blue);
+    color: #fff;
+    text-align: center;
+    padding: 7rem 0 5rem;
+    margin-top: 5rem;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h3 {
+        margin-bottom: 4rem;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    p {
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    .btn {
+        font-size: 2rem;
+        &_container {
+            padding-top: 1.2rem;
+            width: 250px !important;
+        }
+    }
+}
+
+/* === FEEDBACKS === */
+.feedbacks {
+    margin-top: 10rem;
+    margin-bottom: 50rem;
+    &_container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        @media only screen and (min-width:481px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    article {
+        width: 100%;
+        margin-top: 4rem;
+        @media only screen and (min-width:481px) and (max-width: 767px) {
+            width: 45%;
+            &:last-child {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        @media only screen and (min-width:768px){
+            width: 30%;
+            margin-top: 2rem;
+        }
+        box-shadow: 0 .5rem 1rem rgba($color: #000000, $alpha: .3);
+        border-radius: 2rem;
+        padding: 2rem;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &::before {
+            content: "";
+            display: block;
+
+            width: 5rem;
+            height: 5rem;
+            background: transparent no-repeat url(../assets/images/icon-feedbacks.svg);
+            background-size: contain;
+
+            position: absolute;
+            top: -2.5rem;
+            left: 3rem;
+        }
+
+        img {
+            width: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .brand {
+            &-name {
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            &-desc {
+                color: var(--grey);
+                font-size: 1.4rem;
+                font-style: italic;
+                padding-top: .5rem;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid var(--grey);
+            }
+            &-text {
+                font-weight: 500;
+                font-size: 1.8rem;
+                line-height: 3rem;
+                padding-top: 1.5rem;
+                @include md {
+                    font-size: 1.6rem;
+                    line-height: 2.5rem;
+                }
+            }
+        }
+    }
+}
