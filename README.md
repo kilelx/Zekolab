@@ -1,4 +1,5 @@
 # Zekolab
-Code of Zekolab
 
-View Live Site
+[View live site](https://kilelx.github.io/Advice-Generator-API/)
+
+Code of Zekolab
