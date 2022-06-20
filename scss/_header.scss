@@ -1,6 +1,8 @@
 /* === HEADER === */
 header {
     padding-top: 2.5rem;
+    transition: background-color .2s linear;
+    background-color: transparent;
 
     &.active {
         width: 100vw;
@@ -40,10 +42,6 @@ header {
 
             @include md-hp {
                 display: none;
-                &>li {
-                    transition: opacity .2s linear;
-                    opacity: 0;
-                }
             }
 
         }
@@ -88,12 +86,12 @@ header {
             }
 
             flex-direction: column;
-            width: 36px;
+            width: 28px;
             cursor: pointer;
 
             position: absolute;
             top: 2.5rem;
-            right: 2rem;
+            right: 1.75rem;
             z-index: 10000;
 
             .icon_burger {
@@ -103,8 +101,8 @@ header {
                 &-mid {
                     background: #fff;
                     border-radius: 10px;
-                    height: 5px;
-                    margin: 4px 0;
+                    height: 4px;
+                    margin: 3px 0;
                     width: 100%;
 
                     transform-origin: center left;
@@ -131,19 +129,4 @@ header {
             }
         }
     }
-
-
-
-    // input[type="checkbox"]:checked~.icon_burger-top {
-    //     transform: rotate(.125turn);
-    // }
-
-    // input[type="checkbox"]:checked~.icon_burger-mid {
-    //     transform: translateX(30px);
-    //     opacity: 0;
-    // }
-
-    // input[type="checkbox"]:checked~.icon_burger-bottom {
-    //     transform: rotate(-.125turn);
-    // }
 }
