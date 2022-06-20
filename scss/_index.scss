@@ -49,11 +49,12 @@
         }
 
         @include md-hp {
-            background-position: center calc(100% - 5rem);
-            background-size: 40%;
+            background-position: right calc(100% - 2rem);
+            background-size: 50%;
         }
     }
 }
+
 
 // .hero {
 
@@ -69,10 +70,12 @@
 //         text-transform: uppercase;
 //         width: 70%;
 //         margin-bottom: 7rem;
+
 //         @include sm {
 //             font-size: 3.5rem;
 //             line-height: 4.5rem;
 //         }
+
 //         @include md-hp {
 //             width: 100%;
 //         }
@@ -81,10 +84,12 @@
 //     .container-ctas {
 //         column-gap: 4rem;
 //         margin-bottom: 10rem;
+
 //         @include sm {
 //             flex-direction: column;
 //             row-gap: 3.5rem;
 //         }
+
 //         @include md-hp {
 //             justify-content: center;
 //             margin-bottom: 7rem;
@@ -93,22 +98,16 @@
 
 //     &-content {
 //         padding-top: 12rem;
-//         background: transparent url(../assets/images/mockup-phone.png) no-repeat;
+//         background: transparent url(../assets/images/mockup-phone-overlay.png) no-repeat;
 //         background-position: center right;
+
 //         @include sm {
 //             padding-top: 5rem;
 //         }
-//         @include md-hp {
-//             background-image: none;
-//         }
-//     }
-// }
 
-// .btn {
-//     &_container {
-//         &-hero {
-//             background-image: var(--red-gradient);
-//             box-shadow: var(--red-box-shadow-down);
+//         @include md-hp {
+//             background-position: right calc(100% - 2rem);
+//             background-size: 50%;
 //         }
 //     }
 // }
@@ -132,6 +131,9 @@
 
             @include md-hp {
                 width: 20rem;
+            }
+            @include sm {
+                width: 15rem;
             }
         }
     }
