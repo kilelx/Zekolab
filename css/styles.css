@@ -309,6 +309,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   .hero h1 {
     font-size: 3.5rem;
     line-height: 4.5rem;
+    margin-bottom: 4rem;
   }
 }
 @media (max-width: 900px) {
@@ -350,7 +351,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 }
 @media (max-width: 767px) {
   .hero-content .hero_right {
-    width: 40%;
+    width: 60%;
     margin: 0 auto 4rem;
   }
 }

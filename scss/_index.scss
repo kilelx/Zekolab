@@ -16,6 +16,7 @@
         @include sm {
             font-size: 3.5rem;
             line-height: 4.5rem;
+            margin-bottom: 4rem;
         }
 
         @include md-hp {
@@ -43,6 +44,7 @@
 
         & .hero_left {
             width: 75%;
+
             @include sm {
                 width: 100%;
             }
@@ -52,8 +54,9 @@
             width: 25%;
             height: auto;
             transform: scale(1.1);
+
             @include sm {
-                width: 40%;
+                width: 60%;
                 margin: 0 auto 4rem;
             }
         }
@@ -404,6 +407,7 @@
                 height: 8rem;
                 right: 3rem;
             }
+
             @include xs {
                 left: 50%;
                 transform: translateX(-50%);
@@ -426,8 +430,10 @@
     .badge_container {
         justify-content: flex-end;
         padding-bottom: 0;
+
         @media (max-width: 900px) {
             justify-content: center;
+
             img {
                 width: 15rem;
             }
