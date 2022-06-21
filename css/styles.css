@@ -189,8 +189,6 @@ img {
 /* === HEADER === */
 header {
   padding-top: 2.5rem;
-  transition: background-color 0.2s linear;
-  background-color: transparent;
 }
 header.active {
   width: 100vw;
@@ -450,7 +448,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 /* === FEEDBACKS === */
 .feedbacks {
   margin-top: 10rem;
-  margin-bottom: 50rem;
+  margin-bottom: 17.5rem;
 }
 .feedbacks_container {
   display: flex;
@@ -526,6 +524,56 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   .feedbacks article .brand-text {
     font-size: 1.6rem;
     line-height: 2.5rem;
+  }
+}
+
+/* === LEVEL UP === */
+.level-up {
+  background: transparent linear-gradient(135deg, #C63942, #1800BC);
+  padding: 7rem 0 4rem;
+  margin-bottom: 30rem;
+  color: #FFF;
+}
+.level-up > div {
+  position: relative;
+}
+.level-up > div::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 9rem;
+  height: 9rem;
+  background: transparent url(../assets/images/fusee-icon.png) no-repeat center;
+  background-size: contain;
+  top: -10rem;
+  right: 10rem;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .level-up > div::after {
+    width: 8rem;
+    height: 8rem;
+    right: 3rem;
+  }
+}
+.level-up h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.level-up h3 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin: 2rem 0 3rem;
+}
+.level-up .badge_container {
+  justify-content: flex-end;
+  padding-bottom: 0;
+}
+@media (max-width: 900px) {
+  .level-up .badge_container {
+    justify-content: center;
+  }
+  .level-up .badge_container img {
+    width: 15rem;
   }
 }
 

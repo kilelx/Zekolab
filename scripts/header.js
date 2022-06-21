@@ -3,12 +3,13 @@ const burgerToggle = document.querySelector("#toggle-burger");
 const heroSection = document.querySelector(".hero-content");
 // const animLis = document.querySelectorAll("header .navbar_content > li");
 
-console.log(header.offsetHeight);
+const headerHeight = header.offsetHeight;
+console.log(headerHeight);
 
 burgerToggle.addEventListener("click", () => {
     header.classList.toggle("active");
-    heroSection.style.paddingTop = `${header.offsetHeight}px`;
-    // animLis.forEach(li => {
-    //     li.classList.toggle("run-transition");
-    // });
+    heroSection.style.paddingTop = `10.7rem`;
+    if (!header.classList.contains("active")) {
+        heroSection.style.paddingTop = "5rem";
+    }
 });
