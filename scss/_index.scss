@@ -2,7 +2,7 @@
 .hero {
 
     background: var(--blue-gradient);
-    position: relative;
+    // position: relative;
     z-index: 0;
     padding-left: 1.6rem;
     padding-right: 1.6rem;
@@ -11,7 +11,6 @@
         color: #FFF;
         font-size: 5rem;
         text-transform: uppercase;
-        width: 70%;
         margin-bottom: 7rem;
 
         @include sm {
@@ -41,19 +40,90 @@
 
     &-content {
         padding-top: 12rem;
-        background: transparent url(../assets/images/mockup-phone-overlay.png) no-repeat;
-        background-position: center right;
+
+        & .hero_left {
+            width: 75%;
+            @include sm {
+                width: 100%;
+            }
+        }
+
+        & .hero_right {
+            width: 25%;
+            height: auto;
+            transform: scale(1.1);
+            @include sm {
+                width: 40%;
+                margin: 0 auto 4rem;
+            }
+        }
 
         @include sm {
             padding-top: 5rem;
         }
 
-        @include md-hp {
-            background-position: right calc(100% - 2rem);
-            background-size: 50%;
-        }
+        // @include md-hp {
+        //     background-position: right calc(100% - 2rem);
+        //     background-size: 50%;
+        // }
     }
 }
+
+// .hero {
+
+//     background: var(--blue-gradient);
+//     position: relative;
+//     z-index: 0;
+//     padding-left: 1.6rem;
+//     padding-right: 1.6rem;
+
+//     h1 {
+//         color: #FFF;
+//         font-size: 5rem;
+//         text-transform: uppercase;
+//         width: 70%;
+//         margin-bottom: 7rem;
+
+//         @include sm {
+//             font-size: 3.5rem;
+//             line-height: 4.5rem;
+//         }
+
+//         @include md-hp {
+//             width: 100%;
+//         }
+//     }
+
+//     .container-ctas {
+//         column-gap: 4rem;
+//         margin-bottom: 10rem;
+
+//         @include sm {
+//             flex-direction: column;
+//             row-gap: 3.5rem;
+//         }
+
+//         @include md-hp {
+//             justify-content: center;
+//             margin-bottom: 7rem;
+//         }
+//     }
+
+//     &-content {
+//         padding-top: 12rem;
+//         background: transparent url(../assets/images/mockup-phone-overlay.png) no-repeat;
+//         background-position: center right;
+
+//         @include sm {
+//             padding-top: 5rem;
+//         }
+
+//         @include md-hp {
+//             background-position: right calc(100% - 2rem);
+//             background-size: 50%;
+//         }
+//     }
+// }
 
 
 // .hero {
@@ -185,7 +255,7 @@
     color: #fff;
     text-align: center;
     padding: 7rem 0 5rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
 
     .container {
         display: flex;
@@ -217,8 +287,8 @@
 
 /* === FEEDBACKS === */
 .feedbacks {
-    margin-top: 10rem;
-    margin-bottom: 17.5rem;
+    margin-top: 9rem;
+    margin-bottom: 10rem;
 
     &_container {
         display: flex;
