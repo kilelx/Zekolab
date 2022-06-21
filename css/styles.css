@@ -555,6 +555,13 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
     right: 3rem;
   }
 }
+@media (max-width: 480px) {
+  .level-up > div::after {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -11rem;
+  }
+}
 .level-up h2 {
   font-size: 4rem;
   text-transform: uppercase;

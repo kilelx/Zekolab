@@ -334,6 +334,11 @@
                 height: 8rem;
                 right: 3rem;
             }
+            @include xs {
+                left: 50%;
+                transform: translateX(-50%);
+                top: -11rem;
+            }
         }
     }
 
