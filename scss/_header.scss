@@ -1,7 +1,7 @@
 /* === HEADER === */
 header {
     padding-top: 2.5rem;
-    // transition: all 5s linear;
+    // transition: all .3s linear;
     // background-color: transparent;
 
     &.active {
@@ -38,7 +38,7 @@ header {
         font-size: 1.75rem;
 
         &_content {
-            width: 65%;
+            width: 55%;
 
             @include md-hp {
                 display: none;
