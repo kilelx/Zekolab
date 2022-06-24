@@ -221,7 +221,7 @@ header .navbar {
   font-size: 1.75rem;
 }
 header .navbar_content {
-  width: 65%;
+  width: 55%;
 }
 @media (max-width: 900px) {
   header .navbar_content {
