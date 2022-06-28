@@ -62,7 +62,6 @@ header {
                 &::before {
                     content: "";
                     display: block;
-                    background-image: var(--light-mcol-gradient);
                     border-radius: inherit;
                     box-shadow: var(--red-box-shadow);
                     width: calc(100% + 4px);
@@ -73,6 +72,14 @@ header {
                     top: 0;
                     left: 0;
                     transform: translateX(-2px) translateY(-2px);
+                    background-image: var(--light-mcol-gradient);
+                    background-position: left;
+                    background-size: 200%;
+                    transition: background-position .3s ease-in-out;
+                }
+
+                &:hover::before {
+                    background-position: right;
                 }
             }
         }

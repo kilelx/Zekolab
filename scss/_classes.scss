@@ -77,7 +77,12 @@
     }
     &-red {
         background-image: var(--red-gradient);
-        box-shadow: var(--red-box-shadow-down);
+        box-shadow: var(--red-box-shadow);
+        transition: all .3s ease-in-out;
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--red-box-shadow-down);
+        }
     }
     @include xl {
         font-size: 2rem;
