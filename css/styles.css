@@ -365,6 +365,10 @@ img {
 header {
   padding-top: 2.5rem;
 }
+header .logo {
+  display: flex;
+  align-items: center;
+}
 header.active {
   width: 100vw;
   height: 100vh;
@@ -480,6 +484,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   z-index: 0;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
+  height: 100vh;
 }
 .hero h1 {
   color: #FFF;
@@ -501,7 +506,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 }
 .hero .container-ctas {
   column-gap: 4rem;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
 }
 @media (max-width: 767px) {
   .hero .container-ctas {
@@ -509,7 +514,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
     row-gap: 2.5rem;
   }
   .hero .container-ctas .btn_container {
-    padding-top: 0.8rem;
+    padding-top: 0.7rem;
     height: 35px;
     border-radius: 25px;
   }
@@ -524,7 +529,12 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   }
 }
 .hero-content {
-  padding-top: 4rem;
+  padding-top: 11rem;
+}
+@media (max-width: 767px) {
+  .hero-content {
+    padding-top: 4rem;
+  }
 }
 .hero-content .hero_left {
   width: 75%;
@@ -541,6 +551,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 }
 @media (max-width: 767px) {
   .hero-content .hero_right {
+    max-width: 170px;
     width: 50%;
     margin: 0 auto 3rem;
   }
@@ -548,6 +559,14 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 @media (max-width: 767px) {
   .hero-content {
     padding-top: 5rem;
+  }
+}
+@media (min-width: 420px) and (max-width: 767px) {
+  .hero .container-ctas {
+    align-items: center;
+  }
+  .hero .container-ctas .btn_container {
+    width: 350px;
   }
 }
 
@@ -565,11 +584,6 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 }
 .badge-store img {
   width: 15rem;
-}
-@media (max-width: 900px) {
-  .badge-store img {
-    width: 20rem;
-  }
 }
 @media (max-width: 767px) {
   .badge-store img {

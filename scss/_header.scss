@@ -1,6 +1,10 @@
 /* === HEADER === */
 header {
     padding-top: 2.5rem;
+    .logo {
+        display: flex;
+        align-items: center;
+    }
     // transition: all .3s linear;
     // background-color: transparent;
 

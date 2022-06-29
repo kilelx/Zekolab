@@ -6,6 +6,7 @@
     z-index: 0;
     padding-left: 1.6rem;
     padding-right: 1.6rem;
+    height: 100vh;
 
     h1 {
         color: #FFF;
@@ -26,13 +27,13 @@
 
     .container-ctas {
         column-gap: 4rem;
-        margin-bottom: 10rem;
+        margin-bottom: 6rem;
 
         @include sm {
             flex-direction: column;
             row-gap: 2.5rem;
             .btn_container {
-                padding-top: .8rem;
+                padding-top: .7rem;
                 height: 35px;
                 border-radius: 25px;
                 .btn {
@@ -48,7 +49,10 @@
     }
 
     &-content {
-        padding-top: 4rem;
+        padding-top: 11rem;
+        @include sm {
+            padding-top: 4rem;
+        }
 
         & .hero_left {
             width: 75%;
@@ -64,6 +68,7 @@
             transform: scale(1.1);
 
             @include sm {
+                max-width: 170px;
                 width: 50%;
                 margin: 0 auto 3rem;
             }
@@ -73,9 +78,19 @@
             padding-top: 5rem;
         }
 
-        // @include md-hp {
-        //     background-position: right calc(100% - 2rem);
-        //     background-size: 50%;
+    }
+
+    @media (min-width: 420px) and (max-width: 767px) {
+        .container-ctas {
+            align-items: center;
+            & .btn_container {
+                width: 350px;
+            }
+        }
+        // .hero-content {
+        //     .hero_right {
+        //         max-width: 27rem;
+        //     }
         // }
     }
 }
@@ -96,10 +111,6 @@
     &-store {
         img {
             width: 15rem;
-
-            @include md-hp {
-                width: 20rem;
-            }
 
             @include sm {
                 width: 10.5rem;
