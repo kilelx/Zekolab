@@ -680,7 +680,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
     width: 60%;
   }
   .campain .block .mockup img {
-    margin: 6rem auto !important;
+    margin: 4rem auto 6rem !important;
   }
 }
 .campain .block .mockup img {
