@@ -32,10 +32,12 @@
         @include sm {
             flex-direction: column;
             row-gap: 2.5rem;
+
             .btn_container {
                 padding-top: .7rem;
                 height: 35px;
                 border-radius: 25px;
+
                 .btn {
                     font-size: 1.5rem;
                 }
@@ -49,7 +51,8 @@
     }
 
     &-content {
-        padding-top: 7rem;
+        padding-top: 11rem;
+
         @include sm {
             padding-top: 4rem;
         }
@@ -83,10 +86,12 @@
     @media (min-width: 420px) and (max-width: 767px) {
         .container-ctas {
             align-items: center;
+
             & .btn_container {
                 width: 350px;
             }
         }
+
         // .hero-content {
         //     .hero_right {
         //         max-width: 27rem;
@@ -159,14 +164,15 @@
 }
 
 /* === FIXING ISSUE WITH THE HEIGHT === */
-@media (max-height: 655px) {
+@media (max-height: 655px) and (min-width: 900px){
     .hero {
         h1 {
             font-size: 4.5rem;
             margin-bottom: 5rem;
         }
-        &-content {
 
+        &-content {
+            padding-top: 7rem;
         }
     }
 }
