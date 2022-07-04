@@ -90,6 +90,8 @@
 
 }
 
+/* === TITLE === */
+
 .title {
     &_container {
         text-align: center;
@@ -120,4 +122,9 @@
             line-height: 4.5rem;
         }
     }
+}
+
+/* === CLASSES === */
+.overflow-hidden {
+    overflow: hidden;
 }

@@ -8,10 +8,10 @@ console.log(headerHeight);
 
 burgerToggle.addEventListener("click", () => {
     header.classList.toggle("active");
+    document.body.classList.toggle("overflow-hidden");
     heroSection.style.paddingTop = `10.7rem`;
     if (!header.classList.contains("active")) {
         heroSection.style.paddingTop = "5rem";
-        document.querySelector("body").style.overflow = 'hidden';
         console.log("Stop scroll");
     }
 });

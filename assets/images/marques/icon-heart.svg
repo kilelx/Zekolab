@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53.493" height="47.7" viewBox="0 0 53.493 47.7">
+  <defs>
+    <linearGradient id="linear-gradient" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f24c57"/>
+      <stop offset="1" stop-color="#1800bc"/>
+    </linearGradient>
+  </defs>
+  <path id="Icon_material-favorite-border" data-name="Icon material-favorite-border" d="M41.783,4.5A16.21,16.21,0,0,0,29.747,9.933,16.21,16.21,0,0,0,17.711,4.5,14.367,14.367,0,0,0,3,18.8c0,9.826,9.094,17.832,22.868,30L29.747,52.2l3.878-3.431C47.4,36.629,56.493,28.623,56.493,18.8A14.367,14.367,0,0,0,41.783,4.5ZM30.014,44.922l-.267.26-.267-.26C16.748,33.718,8.349,26.31,8.349,18.8a9.015,9.015,0,0,1,9.361-9.1,10.466,10.466,0,0,1,9.549,6.135h5A10.4,10.4,0,0,1,41.783,9.7a9.015,9.015,0,0,1,9.361,9.1C51.144,26.31,42.746,33.718,30.014,44.922Z" transform="translate(-3 -4.5)" fill="url(#linear-gradient)"/>
+</svg>

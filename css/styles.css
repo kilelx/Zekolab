@@ -139,6 +139,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* === TITLE === */
 .title_container {
   text-align: center;
   padding-left: 1.6rem;
@@ -168,6 +169,11 @@ p, h1, h2, h3, h4, h5, h6 {
     font-size: 3.5rem;
     line-height: 4.5rem;
   }
+}
+
+/* === CLASSES === */
+.overflow-hidden {
+  overflow: hidden;
 }
 
 /* === GO SECTION === */
@@ -628,28 +634,54 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   font-size: 1.8rem;
 }
 
-.campain ul {
-  list-style-type: disc;
-}
 .campain h2 {
   margin-top: 8rem;
 }
 .campain .block {
   display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .campain .block:nth-child(1n) {
+    flex-direction: column !important;
+    justify-content: center;
+  }
 }
 .campain .block .infos {
   width: 48%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+}
+@media (max-width: 767px) {
+  .campain .block .infos {
+    width: 75%;
+  }
 }
 .campain .block .infos img {
   width: 50px;
   height: auto;
+  margin: 0 auto 2.5rem;
+}
+.campain .block .infos h3 {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.campain .block .infos p {
+  font-weight: 500;
+}
+.campain .block .infos ul {
+  justify-content: center;
+  row-gap: 2.5rem;
+  margin-top: 2rem;
 }
 .campain .block .mockup {
   width: 48%;
+}
+@media (max-width: 767px) {
+  .campain .block .mockup {
+    width: 60%;
+  }
+  .campain .block .mockup img {
+    margin: 6rem auto !important;
+  }
 }
 .campain .block .mockup img {
   margin: 0 auto;
@@ -659,6 +691,34 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 }
 .campain .block:nth-child(even) {
   flex-direction: row-reverse;
+}
+.campain .block:nth-child(1) li {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 5px 10px #d9d9d9;
+  margin-right: 2rem;
+}
+.campain .block:nth-child(2) .infos > div {
+  justify-content: space-evenly;
+}
+.campain .block:nth-child(2) .infos > div img {
+  margin: 0 0 2.5rem;
+}
+.campain .block:nth-child(2) p {
+  margin-bottom: 1.5rem;
+}
+.campain .block:nth-child(3) ul {
+  list-style-type: disc;
+}
+.campain .block:nth-child(3) ul li {
+  margin-bottom: 1.5rem;
+  margin-left: 16px;
+}
+.campain .block:nth-child(3) ul li span {
+  font-weight: 600;
+}
+.campain .block:nth-child(5) ul {
+  list-style-type: disc;
 }
 
 a {
