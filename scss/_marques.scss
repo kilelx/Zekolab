@@ -57,11 +57,16 @@
             flex-direction: row-reverse;
         }
         &:nth-child(1) {
-            li {
-                padding: .5rem 1rem;
-                border-radius: 2rem;
-                box-shadow:  0 5px 10px #d9d9d9;
-                margin-right: 2rem;
+            .infos {
+                p {
+                    text-align: center;
+                }
+                li {
+                    padding: .5rem 1rem;
+                    border-radius: 2rem;
+                    box-shadow:  0 5px 10px #d9d9d9;
+                    margin-right: 2rem;
+                }
             }
         }
         &:nth-child(2) {

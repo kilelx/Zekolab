@@ -692,7 +692,10 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 .campain .block:nth-child(even) {
   flex-direction: row-reverse;
 }
-.campain .block:nth-child(1) li {
+.campain .block:nth-child(1) .infos p {
+  text-align: center;
+}
+.campain .block:nth-child(1) .infos li {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   box-shadow: 0 5px 10px #d9d9d9;
