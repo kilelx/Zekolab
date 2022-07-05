@@ -26,13 +26,16 @@
                 margin-bottom: 2.5rem;
                 text-align: center;
             }
-            p {
-                font-weight: 500;
-            }
+            // p {
+            //     font-weight: 500;
+            // }
             ul {
                 justify-content: center;
                 row-gap: 2.5rem;
                 margin-top: 2rem;
+            }
+            &_num {
+                font-size: .85em;
             }
         }
         .mockup {
@@ -76,17 +79,26 @@
             ul {
                 list-style-type: disc;
                 li {
-                    margin-bottom: 1.5rem;
+                    margin-bottom: 1rem;
                     margin-left: 16px;
                     span {
                         font-weight: 600;
+                        font-size: .9em;
                     }
                 }
+            }
+        }
+        &:nth-child(4) {
+            p {
+                margin-bottom: 1rem;
             }
         }
         &:nth-child(5) {
             ul {
                 list-style-type: disc;
+                li {
+                    margin-bottom: 1rem;
+                }
             }
         }
     }

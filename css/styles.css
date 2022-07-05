@@ -490,7 +490,6 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   z-index: 0;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
-  height: 100vh;
 }
 .hero h1 {
   color: #FFF;
@@ -635,15 +634,6 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
 }
 
 /* === FIXING ISSUE WITH THE HEIGHT === */
-@media (max-height: 655px) and (min-width: 900px) {
-  .hero h1 {
-    font-size: 4.5rem;
-    margin-bottom: 5rem;
-  }
-  .hero-content {
-    padding-top: 7rem;
-  }
-}
 .campain h2 {
   margin-top: 8rem;
 }
@@ -674,13 +664,13 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   margin-bottom: 2.5rem;
   text-align: center;
 }
-.campain .block .infos p {
-  font-weight: 500;
-}
 .campain .block .infos ul {
   justify-content: center;
   row-gap: 2.5rem;
   margin-top: 2rem;
+}
+.campain .block .infos_num {
+  font-size: 0.85em;
 }
 .campain .block .mockup {
   width: 48%;
@@ -721,14 +711,21 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   list-style-type: disc;
 }
 .campain .block:nth-child(3) ul li {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   margin-left: 16px;
 }
 .campain .block:nth-child(3) ul li span {
   font-weight: 600;
+  font-size: 0.9em;
+}
+.campain .block:nth-child(4) p {
+  margin-bottom: 1rem;
 }
 .campain .block:nth-child(5) ul {
   list-style-type: disc;
+}
+.campain .block:nth-child(5) ul li {
+  margin-bottom: 1rem;
 }
 
 a {
