@@ -71,9 +71,12 @@
         }
         &:nth-child(2) {
             .infos > div {
-                justify-content: space-evenly;
+                justify-content: center;
                 img {
                     margin: 0 0 2.5rem;
+                    &:first-child {
+                        margin-right: 4rem;
+                    }
                 }
             }
             p {

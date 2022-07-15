@@ -616,6 +616,7 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   width: 25rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 @media (max-width: 600px) {
   .features-article {
@@ -623,8 +624,8 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   }
 }
 .features-article img {
-  height: 90px;
-  width: auto;
+  width: 7rem;
+  height: auto;
   margin-bottom: 1.5rem;
 }
 .features-article p {
@@ -702,10 +703,13 @@ header .navbar .burger-menu input[type=checkbox]:checked ~ .icon_burger-bottom {
   margin-right: 2rem;
 }
 .campain .block:nth-child(2) .infos > div {
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .campain .block:nth-child(2) .infos > div img {
   margin: 0 0 2.5rem;
+}
+.campain .block:nth-child(2) .infos > div img:first-child {
+  margin-right: 4rem;
 }
 .campain .block:nth-child(2) p {
   margin-bottom: 1.5rem;
