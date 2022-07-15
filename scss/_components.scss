@@ -130,7 +130,6 @@
 .level-up {
     background: transparent linear-gradient(135deg, #C63942, #1800BC);
     padding: 7rem 0 4rem;
-    margin-bottom: 30rem;
     color: #FFF;
 
     &>div {
@@ -183,6 +182,63 @@
             img {
                 width: 15rem;
             }
+        }
+    }
+}
+
+/* === FAQ === */
+.faq {
+    padding: 3rem 2rem 3rem;
+    margin-top: 75px;
+    h1 {
+        text-align: center;
+    }
+    &_title {
+        padding-bottom: 2rem;
+    }
+    .questions {
+        border-bottom: 1px solid hsl(240, 5%, 91%);
+        padding: 1rem 0;
+
+        &.active {
+            h2 {
+                font-weight: 700;
+            }
+            img {
+                transform: rotate(180deg) !important;
+            }
+            .invisible-panel {
+                max-height: 150px;
+                margin-bottom: 2rem;
+            }
+        }
+
+        h2 {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .visible-panel {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--des-blue);
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            cursor: pointer;
+
+            img {
+                width: 1.5rem;
+                height: auto;
+                transform: rotate(0deg);
+                transition: transform .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+            }
+        }
+
+        .invisible-panel {
+            max-height: 0;
+            overflow: hidden;
+            transition: all .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
         }
     }
 }
