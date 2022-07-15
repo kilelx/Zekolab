@@ -304,7 +304,7 @@ p, h1, h2, h3, h4, h5, h6 {
   position: absolute;
   width: 9rem;
   height: 9rem;
-  background: transparent url(../assets/images/fusee-icon.png) no-repeat center;
+  background: transparent url(../assets/images/img-rocket.png) no-repeat center;
   background-size: contain;
   top: -10rem;
   right: 10rem;
@@ -358,7 +358,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .faq .questions {
   border-bottom: 1px solid hsl(240deg, 5%, 91%);
-  padding: 1rem 0;
 }
 .faq .questions.active h2 {
   font-weight: 700;
@@ -379,8 +378,8 @@ p, h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   align-items: center;
   color: var(--des-blue);
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
   cursor: pointer;
 }
 .faq .questions .visible-panel img {
