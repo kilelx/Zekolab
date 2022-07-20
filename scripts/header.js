@@ -1,10 +1,7 @@
 const header = document.querySelector("header");
 const burgerToggle = document.querySelector("#toggle-burger");
 const heroSection = document.querySelector(".hero-content");
-// const animLis = document.querySelectorAll("header .navbar_content > li");
-
-const headerHeight = header.offsetHeight;
-console.log(headerHeight);
+const stickyHeader = document.querySelector(".header-sticky");
 
 burgerToggle.addEventListener("click", () => {
     header.classList.toggle("active");
@@ -12,6 +9,17 @@ burgerToggle.addEventListener("click", () => {
     heroSection.style.paddingTop = `10.7rem`;
     if (!header.classList.contains("active")) {
         heroSection.style.paddingTop = "5rem";
-        console.log("Stop scroll");
     }
 });
+
+// window.addEventListener("scroll", () => {
+//     const {scrollTop, clientHeight} = document.documentElement;
+
+//     console.log(stickyHeader);
+
+//     if (scrollTop > clientHeight) {
+//         stickyHeader.classList.remove("not-visible");
+//     } else {
+//         stickyHeader.classList.add("not-visible");
+//     }
+// })
